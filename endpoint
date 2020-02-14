@@ -1,0 +1,32 @@
+=================
+endpoint tipo GET
+=================
+
+++++
+Emipro
+++++
+
+-> https://www.emiprotechnologies.com/technical_notes/magento-technical-notes-60/post/create-custom-rest-api-for-magento-2-678
+
+Obs: O tipo post não funciona.
+
+Passos na criação do módulo
+
+-> ./magento module:enable Module_Name
+-> ./magento module:status
+-> ./magento setup:upgrade
+
+Desintalar
+
+-> ./magento  module:disable Module_Name
+-> ./magento  module:uninstall Module_Name
+
+=================
+endpoint tipo POST
+=================
+
+++++
+Magenest
+++++
+
+-> https://store.magenest.com/blog/how-to-create-custom-rest-api-in-magento-2-updated-2019/

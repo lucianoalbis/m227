@@ -1,0 +1,8 @@
+#!/usr/bin/env bash
+
+rm -rf src/m2/var/di/* src/m2/var/generation/* src/m2/var/log/* src/m2/var/page_cache/* 
+./n98 cache:clean 
+./n98 cache:flush 
+./n98 setup:upgrade 
+./n98 setup:di:compile 
+./n98 indexer:reindex

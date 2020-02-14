@@ -1,0 +1,39 @@
+Estudos module Mageplaza HelloWord
+
+./n98 setup:upgrade
+./n98 setup:static-content:deploy
+./n98 cache:flush
+
+https://www.mageplaza.com/magento-2-module-development/
+
+Run data to frontend
+
+http://localhost/m2/helloworld/index/example
+http://localhost/m2/helloworld/index/index
+http://localhost/m2/helloworld/index/test
+http://localhost/m2/helloworld/index/config
+http://localhost/m2/helloworld/index/display
+
+====
+Create commad
+====
+
+Run command console (style laravel)
+
+-> https://www.mageplaza.com/magento-2-module-development/magento-2-how-to-add-command-line-console-cli.html
+
+cd ~/Documentos/Magento2-master/src/m2$ 
+
+-> bin/magento example:sayhello --name Teste
+OR
+-> bin/magento example:sayhello
+
+===
+Create job
+===
+
+-> https://www.mageplaza.com/devdocs/magento-2-create-cron-job/
+
+cd ~/Documentos/Magento2-master/src/m2$ 
+bin/magento cron:run --group="default"
+
